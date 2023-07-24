@@ -30,7 +30,7 @@ twitter.style.visibility= "hidden"
 
 
 // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
-
+const postContainer= document.querySelector('.col')
 const postContainer1= document.querySelector('.col')
 const postContainer2= document.querySelector('div:nth-child(2) > div > div.col')
 const bigPostContainer= document.querySelector('.col-md-6')
@@ -47,17 +47,23 @@ aBigPost.addEventListener('click', function (event){
     
 })
 
-post.addEventListener('click', function(event){
+for (const link of aPost) {
+    link.addEventListener('click', function(event){
     
-    
-    postContainer1.remove()
-})
+        postContainer.remove()
 
-post2.addEventListener('click', function(){
+       
+
     
-    postContainer2.remove()
+    })
+}
+
+
+// post2.addEventListener('click', function(){
     
-})
+//     postContainer2.remove()
+    
+// })
 
 
 
@@ -67,11 +73,19 @@ post2.addEventListener('click', function(){
 
 // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
 
-const author= document.querySelector('.blog-post-meta a') //CONTINUA A NON FUNZIONARE SE USO QUERYSELECTORALL!!!!!!
+const authors= document.querySelectorAll('.blog-post-meta a') 
 
-author.onmouseover = function(){
+for (const author of authors) {
+    author.onmouseover = function(){
 
-alert(author.innerText)
+        alert(author.innerText)
+}
 
-};
+
+}
+
+
+
+
+
 
