@@ -1,25 +1,14 @@
 // EXTRA Crea con JavaScript la funzionalità per rimuovere il link "twitter" sotto alla sezione "Altro" nell'elemento "aside". Deve avvenire al caricamento della pagina, automticamente.
 
 
-// aggiungere attributo con valore true
+window.onload = function () {
 
-/* Selettore per il primo esercizio di JS */
-// .p-4:nth-child(3) li:nth-child(2){
-//     background-color: green;
-//     }
+    const twitter = document.querySelector('.p-4:nth-child(3) li:nth-child(2)')
 
 
 
 
-
-window.onload= function(){
-
-    const twitter= document.querySelector('.p-4:nth-child(3) li:nth-child(2)')
-
-
-
-
-twitter.style.visibility= "hidden"
+    twitter.style.visibility = "hidden"
 
 
 
@@ -29,62 +18,40 @@ twitter.style.visibility= "hidden"
 
 
 
-// EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
-const postContainer= document.querySelector('.col')
-const postContainer1= document.querySelector('.col')
-const postContainer2= document.querySelector('div:nth-child(2) > div > div.col')
-const bigPostContainer= document.querySelector('.col-md-6')
-
-const aPost= document.querySelectorAll('.col a')  //PERCHE SE USO QUERY SELECTONALL NON FUNZIONA!!!!
-const post= document.querySelector('.stretched-link')
-const post2= document.querySelector('div:nth-child(2) > div > div.col > a')
-const aBigPost=document.querySelector('.lead a')
+    // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
 
 
-aBigPost.addEventListener('click', function (event){
-    
-    bigPostContainer.remove()
-    
-})
+    const links = document.querySelectorAll('.col-md-6 a')
 
-for (const link of aPost) {
-    link.addEventListener('click', function(event){
-    
-        postContainer.remove()
 
-       
+
+    for (const link of links) {
+        link.addEventListener('click', function (event) {
+
+            link.parentElement.remove()
+
+
+
+        })
+    }
 
     
-    })
+    
+    // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
+    
+    const authors = document.querySelectorAll('.blog-post-meta a')
+    
+    for (const author of authors) {
+        author.onmouseover = function () {
+            
+            alert(author.innerText)
+        }
+        
+        
+    }
+    
+    
 }
-
-
-// post2.addEventListener('click', function(){
-    
-//     postContainer2.remove()
-    
-// })
-
-
-
-
-}
-
-
-// EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
-
-const authors= document.querySelectorAll('.blog-post-meta a') 
-
-for (const author of authors) {
-    author.onmouseover = function(){
-
-        alert(author.innerText)
-}
-
-
-}
-
-
 
 
 
