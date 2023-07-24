@@ -1,0 +1,81 @@
+/* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron */
+
+/* Tutti gli h1 che si trovano direttamente all'interno del contenitore con la classe corrispondente */
+.col-md-6 > h1{
+    color: red;
+}
+
+/* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+
+/* Seleziono tutti gli alementi che si trovano nel contenitore con classe selezionata */
+.nav span{
+    color:aqua
+}
+
+/* ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+
+/* Seleziono tutti i tag presenti nel contenitore con una classe specifica */
+.lead a{
+    color: greenyellow;
+}
+
+/* ESERCIZIO 4) Crea un selettore per selezionare il primo blog post */
+
+/* Seleziono il secondo figlio di blog-spot NON HO CAPITO PERCHé SE METTO " MI SELEZIONA IL PRIMO" */
+.blog-post:nth-child(2){
+    background-color: lightblue;
+}
+
+/* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+
+/* Seleziono il primo elemento di questo tipo nella pagina */
+hr:first-of-type{
+    background-color: red;
+}
+
+/* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
+
+/* Seleziono i link pari della navbar */
+.nav span:nth-child(even){
+    color: blueviolet;
+}
+
+/* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
+
+/* Seleziono il primo elemento di quel tipo */
+.list-unstyled li:first-of-type{
+background-color: darkslateblue;
+}
+
+/* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
+
+ /* Seleziono il primo link del primo p del secondo div blog-post */
+.blog-post:nth-child(3) p:nth-child(2) a{
+    background-color: darksalmon;
+}
+
+/* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
+
+.blog-post:nth-child(4) ul li:nth-child(2){
+    background-color: forestgreen;
+}
+
+
+/* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+
+.float-right:last-of-type{
+
+background-color: darkorange;
+}
+
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+
+.btn:last-of-type{
+    color: #007bff;
+    border-color: #007bff;
+}
+
+
+.text-center a:last-of-type{
+    background-color: darkcyan;
+}
