@@ -82,10 +82,19 @@ background-color: darkorange;
 
 /*------------------------------------------------------------------------------------*/
 
-.col a{
-    background-color: hotpink;
-}
+/* .col a{
+    background-color: pink;
+} */
 
 .lead a{
     color: greenyellow;
+}
+
+div:nth-child(2) > div > div.col.p-4.d-flex.flex-column.position-static > a{
+    background-color: pink;
+}
+
+.blog-post-meta a{
+
+    color: crimson;
 }
