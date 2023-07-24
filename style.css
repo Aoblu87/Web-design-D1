@@ -80,10 +80,12 @@ background-color: darkorange;
     background-color: darkcyan;
 }
 
+/*------------------------------------------------------------------------------------*/
 
+.col a{
+    background-color: hotpink;
+}
 
-/* Selettore per il primo esercizio di JS */
-.p-4:nth-child(3) li:nth-child(2){
-    background-color: green;
-    }
-
+.lead a{
+    color: greenyellow;
+}
