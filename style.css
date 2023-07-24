@@ -42,8 +42,7 @@ hr:first-of-type{
 
 /* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
 
-/* Seleziono il primo elemento di quel tipo */
-.list-unstyled li:first-of-type{
+.p-4:nth-child(2) li{
 background-color: darkslateblue;
 }
 
@@ -75,7 +74,16 @@ background-color: darkorange;
     border-color: #007bff;
 }
 
+/* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */
 
 .text-center a:last-of-type{
     background-color: darkcyan;
 }
+
+
+
+/* Selettore per il primo esercizio di JS */
+.p-4:nth-child(3) li:nth-child(2){
+    background-color: green;
+    }
+
