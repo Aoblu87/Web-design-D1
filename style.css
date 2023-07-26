@@ -8,7 +8,7 @@
 /* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar */
 
 /* Seleziono tutti gli alementi che si trovano nel contenitore con classe selezionata */
-.nav span{
+.nav *{
     color:aqua
 }
 

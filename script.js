@@ -7,8 +7,8 @@ window.onload = function () {
 
 
 
-
-    twitter.style.visibility = "hidden"
+    twitter.remove()
+    // twitter.style.display = "none"
 
 
 
@@ -30,8 +30,10 @@ window.onload = function () {
 
             link.parentElement.remove()
 
+            //parentNode
 
-
+            //event.target.closest(.row, .jumbutron)
+            //event.target serve per individuare ciò che viene cliccato
         })
     }
 
